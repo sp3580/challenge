@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>加油</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript"  src="./action.js"></script>
+</head>
+<body>
+	<!-- 上方文字區塊 -->
+	<div class="topside">
+		<button>Task</button>
+		<p>Analytics</p>
+		<img class="" src="./img/pomodoro.png" alt="pomodoro" style="float:right;" width="320px" height="92.5px">
+	</div>
+	<!-- 倒數計時器與 list 區塊 -->
+	<div class="inside">
+		<div class="row">
+			<!-- 倒數計時 -->
+			<div class="col-sm-6 col-md-4">					
+				<div class="timer offset" id="timer">
+					<h2 id="h2">Ready to Work?</h2>
+					<h1 id="h1">25:00</h1>
+					<h3 id="h3">Task : The First Thing To Do</h3>
+					<button class="rounded-circle music"><i class="fa fa-music"></i></button>
+					<button class="rounded-circle pause" id="pause" onclick="isPause()">Pause</button>
+					<!-- <button id="pause" hidden></button> -->
+					<button class="rounded-circle play" id="play" onclick="playOn()">Play</button>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-1"></div>
+			<!-- todolist -->
+			<div class="col-sm-6 col-md-7">
+					<div class="todolist">
+							<table class="todolist-table">
+								<thead>
+									<tr>
+										<th scope="col">Today Task</th>
+										<th scope="col">Status</th>
+										<th scope="col">Work Time</th>
+										<th scope="col">Rest Time</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="list-item">The First Thing To Do</td>
+										<td><i class="fa fa-circle"></i></td>
+										<td>25 min</td>
+										<td>5 min</td>
+									</tr>
+									<tr>
+										<td class="list-item">The Second Thing To Do</td>
+										<td><i class="fa fa-circle"></i></td>
+										<td>25 min</td>
+										<td>5 min</td>
+									</tr>
+									<tr>
+										<td class="list-item">The Threeth Thing To Do</td>
+										<td><i class="fa fa-circle"></i></td>
+										<td>25 min</td>
+										<td>5 min</td>
+									</tr>
+									<tr>
+										<td class="list-item">The Fourth Thing To Do</td>
+										<td class="on"><i class="fa fa-circle"></i></td>
+										<td>25 min</td>
+										<td>5 min</td>
+									</tr>
+									<tr>
+										<td class="list-item">The Fifth Thing To Do</td>
+										<td class="on"><i class="fa fa-circle"></i></td>
+										<td>25 min</td>
+										<td>5 min</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<div class="input-group mb-3">
+								<input type="text" class="form-control">
+								<div class="input-group-prepend">
+										<button class="add_btn" type="button" onclick="addlist()"><i class="fa fa-plus-circle"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+		
+	<script type = "text/javascript">
+
+	</script>
+</body>
+</html>
